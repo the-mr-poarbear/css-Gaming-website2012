@@ -1,0 +1,435 @@
+
+
+   
+
+h3,h1,h2,h4,h5,h6,p{
+    color: #fff;
+}
+
+.bi-rocket-takeoff{
+
+    font-size: 50px ;
+    margin-left: 40px;
+    margin-right:20px ;
+    
+}
+
+
+
+.text{
+    font-size:30px;
+    margin-left: 20px;
+}
+
+.navItem{
+    color: #fff;
+   
+}
+a :active{
+    text-decoration: underline;
+}
+
+.navbar a:hover{
+    
+    color: #fff;
+    transition: 0.1s;
+    text-shadow: 
+        0 0 2px #fff,
+        0 0 4px #fff ,
+        0 0 10px #02e1fa,
+        0 0 12px #02e1fa
+    ;
+}
+
+.navbar{
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    background-color: #68c0ce;
+    opacity: 80%;
+    
+    
+}
+
+
+.navItemsCont{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.options{
+    margin-right: 40px;
+}
+
+body{
+    background-color: #98DFEA;
+    font-family: 'Poppins';
+    font-weight: normal;
+    margin: 0;
+    scroll-behavior: smooth;
+    max-width: 1440px;
+
+}
+
+.unity{
+    position: absolute;
+    translate: 850px 150px;
+    font-size: 50px;
+    color: #FBBB2C;
+}
+
+.nintendo{
+    font-size: 50px;
+    translate: 800px 300px;
+    color: #E83D29;
+}
+
+.nvidia{
+    font-size: 50px;
+    translate: 750px 500px;
+    color: green;
+}
+
+.gameCtrlDiv{
+    background-color: #98DFEA;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.gameController{
+    width:40%;
+   float : right;
+   overflow: hidden;
+}
+
+.sideText{
+    padding: 15px;
+    color: #fff;
+    width:30%;
+    margin-top: 250px;
+    margin-right: 200px;
+    font-size: 22px;
+}
+
+.sideTxtHeader{
+    margin: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.btnSidetxt{
+    background-color: #FBBB2C;
+    color:#fff ;
+    margin-left: 230px;
+    margin-top: 20px;
+}
+
+.btnSidetxt:hover{
+    background-color: #E83D29;
+}
+
+.trendingGameCards{
+    width:100%;
+    
+}
+
+.trendingGames{
+    background-color:#BD4743;
+    padding-bottom: 40px;
+    clear: both;
+    bottom: 300px;
+    
+}
+
+.trendingGames h3 :hover{
+    font-size: larger;
+    transition: 0.3s;
+}
+
+.trendingGames img{
+    filter: drop-shadow(-10px -10px 10px black);
+}
+
+.trendingGames article :hover{
+    filter: drop-shadow(-10px -10px 10px white);
+    transition: 0.3s;
+    opacity: 70%;
+}
+
+.gameImg{
+    aspect-ratio: 9 / 12;
+}
+
+.cardOver{
+    margin-top: 200px;    
+}
+
+.midwayImg{
+    width: 80%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 150px;
+    display: block;
+    border-radius: 30px;
+}
+
+.midway{
+    background-color:#BD4743;
+   
+}
+
+.midwayTxt{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.ourProjects{
+    background-image: linear-gradient( #BD4743, black);
+    padding: 100px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .imgRad{
+    border-radius: 20px;
+  }
+
+
+  .navbar ul , .trendingGames ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: inherit;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+
+  }
+
+  .navbar li , .trendingGames li{
+    float :left;
+  }
+
+ .trendingGames li {
+    width: 20%;
+    margin: 10px;
+  }
+
+  .trendingGames img {
+    aspect-ratio: 3/4;
+    width: 100%;
+    border-radius: 20px; 
+  }
+
+  .trendingGames ul{
+   
+    display: flex;
+    justify-content: center;
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins-SemiBold.ttf') ;
+       
+}
+
+button{
+    border-radius: 10px;
+    padding: 0px 20px;
+    border: none;
+    
+}
+
+h2{
+    font-size: 30px
+}
+
+.subscribe{
+   
+    background-color: black;
+    padding-top: 80px;
+}
+
+.newsletterSub{
+    display: flex;
+    margin: auto;
+    width:80%;
+    border-radius: 30px;
+    background-color: #FBBB2C;
+    justify-content: center;
+}
+
+.newsletterSub h2 , p {
+    border: 0px;
+    margin: 0px;
+}
+
+.inputEmailDiv   {
+    display: flex;
+    padding: 60px 40px;
+    
+    width: 60%;
+   
+}
+
+.submitEmailBut{
+    position: relative;
+    right: 60px;
+    width: 50%;
+    background-color: #33d7f0;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+   
+}
+
+
+.inputBoxEmail{
+   
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+   
+}
+
+.footerHome{
+    background-color: black;
+    padding-top: 150px;
+    
+}
+
+.footerHome .row{
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footerHome li , ul {
+    color: #fff;
+    list-style: none;
+}
+
+.footerHome ul{
+    padding: 0px;
+}
+
+.footerHome .footer-col{
+    width: 20%;
+    padding: 0 15px;
+}
+
+.footerHome .container{
+    max-width: 1170px;
+    background-color: black;
+    margin: auto;
+    
+}
+
+@font-face {
+    font-family: 'PoppinsThin';
+    src: url('../assets/fonts/Poppins-Thin.ttf') ;
+       
+}
+
+.footerHome p {
+   
+    font-size: 12px;
+    font-weight: lighter;
+    padding-top: 10px;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.socialLinks i {
+    color: #fff;
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+.spacer{
+    aspect-ratio: 900/250;
+    width:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    
+    
+}
+
+.layer1{
+    background-image: url('./layered-waves-haikei1.svg');
+}
+
+.themeButton{
+    background-color: #FBBB2C;
+    font-family: Poppins;
+    padding: 2px 20px;
+    
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.themeButton:hover{
+    background-color: #E83D29;
+    font-family: Poppins;
+    padding: 2px 20px;
+    
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.navbar li{
+    position: relative;
+}
+
+
+
+.active::after{
+    content: '';
+    height: 4px;
+    width: 90%;
+    background-color: #FBBB2C;
+    position: absolute;
+    left: 20px;
+    bottom: 0px;
+    top: 65px;
+    opacity:1 ;
+    
+}
+

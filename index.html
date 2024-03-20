@@ -1,12 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- description -->
-    <!-- link style -->
-    <!-- favicon -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+  <!-- I just Got The Icons From Bootstrap Icons -->
+    <link href=" https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css " rel="stylesheet">
+   
+    <link rel="stylesheet" href="./scripts/main.css">
+
+    <meta name="description" content="Free Web Game Website">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon2.png">
     <title>GAMiFY</title>
-  </head>
-  <body></body>
+
+    
+</head>
+
+<script>
+  window.onscroll = function() {changeColor()};
+  
+  function changeColor() {
+  console.log('hi')
+    var navColors=["#68c0ce","#a63632","#a63632","black"]
+    var navbar = document.getElementById("navbar");
+    var sections = document.getElementsByClassName("section");
+    for (var i = 0; i < sections.length; i++) {
+      var rect = sections[i].getBoundingClientRect();
+      if (rect.top <= 0 && rect.bottom >= 0) {
+        console.log(sections[i].style.backgroundColor)
+        navbar.style.backgroundColor = navColors[i];
+      }
+    }
+  }
+  </script>
+
+  
+
+<body>
+    <nav class="navbar navbar-expand-lg " id="navbar">
+        <div class="navItemsCont">
+          <div class="logo">
+            <a class=" navItem" href="gi" style="padding-top: 0px; padding-bottom: 0px;"> <i class="bi bi-rocket-takeoff"></i></a>
+          </div>
+          
+          <div class="options">
+            <ul class="navbar-nav hotizontal ">
+              <li class="nav-item">
+                <a class=" text navItem activable" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class=" text navItem activable" href="/games.html">Games</a>
+              </li>
+              <li class="nav-item ">
+                <a class=" text navItem activable" href="/news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  News
+                </a>
+              </li>
+              <li class="nav-item text activable ">
+                <a class="nav-link navItem" href="/about.html" aria-disabled="true">About us</a>
+              </li>
+
+              <li class="nav-item text ">
+                <button class=" navItem themeButton">light</button>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class = "gameCtrlDiv section" id="section1">
+       <i class="bi bi-unity unity"></i>
+       <i class="bi bi-nintendo-switch nintendo"></i>
+       <i class="bi bi-nvidia nvidia"></i>
+       <div class="sideText">
+          <h1 class="sideTxtHeader">Are You Bored In The House?</h1>
+
+          <p>
+             are you bored in the house and you're in the house bored?
+             bored in the house and you're in the house bored?
+             bored in the mfing in the house bored and you're bored in the house in you're in the house bored ?
+          </p>
+
+          <a href="/games.html">
+            <button class="btn btnSidetxt"><h3>Click Here!</h3></button>
+          </a>
+          
+       </div>
+     
+       <img class="gameController" src="./assets/images/gameControllerHalf.png">
+    </div>
+
+    
+    <div class="spacer layer1"></div>
+    <div class="trendingGames section" id="section2" >
+        
+        <h2 style="padding: 50px; font-size: 30px; padding-left: 110px; margin-top: 0px;">Currently Trending Games</h2>
+        <ul>
+          <li>
+            <article>
+              <img src="assets/images/DeadspaceRemake.png">
+              <h3 style="text-align: center;"><i class="bi bi-fire"></i> 36 Followers</h3>
+            </article>
+            
+          </li>
+
+          <li>
+            <article>
+              <img src="assets/images/eldenRing.png">
+              <h3 style="text-align: center;"><i class="bi bi-fire"></i> 30 Followers</h3>
+            </article>
+            
+          </li>
+
+          <li>
+            <article>
+              <img src="assets/images/gta6.png">
+              <h3 style="text-align: center;"><i class="bi bi-fire"></i> 45 Followers</h3>
+            </article>
+            
+          </li>
+
+          <li>
+            <article>
+              <img src="assets/images/palworld.png">
+              <h3 style="text-align: center;"><i class="bi bi-fire"></i> 56 Followers</h3>
+            </article>
+            
+          </li>
+        </ul>
+    </div>
+
+    <div class="midway section " id="section3">
+        <h2 class="midwayTxt" style="margin: auto 180px ;">Play Our Games To Be Not a Better Gamer But a Better Person</h2>
+        <img class="midwayImg" src="./assets/images/Sekiro.png">
+    </div>
+    <div class="ourProjects">
+        <h2 style="text-align: center;">Our Recent Projects</h2>
+        <p style="text-align: center;">You can see our recent projects here and realize how good of a team we are</p>
+
+        <div class="row">
+
+            <div class="column" >
+                <img class="imgRad" src="assets/images/ghostyel.png" style="width:101%;">
+                
+                
+            </div>
+            <div class="column">
+                <img class="imgRad" src="./assets/images/spiderman.png" style="width:100%">
+                <img class="imgRad" src="assets/images/LouYellow (2).png" style="width:100%">
+            </div>
+            <div class="column">
+                <img class="imgRad" src="assets/images/bloodeborneyel.png" style="width:115%">
+                 
+            </div>
+        </div>
+    </div>
+
+    <div class="subscribe section" id="section4">
+
+        <div style="margin-left: 50px;">
+          <div style="margin-left: 150px; margin-bottom: 50px;" >
+            <h2 style="margin-top: 0px;">Subscribe To Our Newsletter</h2>
+            <p>we have many events and discounts so you better have an ear inside our company</p>
+          </div>
+         
+          <form class="newsletterSub">
+            <label for="fname">
+              <div style="padding: 30px; padding-left: 50px; width:60%">
+                <h2>Stay in loop</h2>
+                <p>subscribe to our newletter to get the latest news right away</p>
+              </div>
+              
+              </label>
+              <br>
+            <div class="inputEmailDiv">
+              <input class="inputBoxEmail" type="text" id="fname" name="fname" placeholder="Your Email Address"><br>
+              <input type="submit" value="Submit" class="submitEmailBut">
+            </div>
+          </form>
+        </div>
+    </div>
+
+    <footer class="footerHome">
+      <div class="container">
+        <div class="row">
+
+          <div class="footer-col" style="position: relative; bottom: 50px;">
+            <h4><i class="bi bi-rocket-takeoff"></i></i></h4>
+            <ul>
+              <li><a href="#"><p>hi idk what to write here but lorem seemed kind of unfinished uk..so ya</p></a></li>
+              <li><a href="#"><p>Lorem!</p></a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>About us</h4>
+            <ul>
+              <li><a href="#"><p>Zeux</p></a></li>
+              <li><a href="#"><p>Portfolio</p></a></li>
+              <li><a href="#"><p>Careers</p></a></li>
+              <li><a href="#"><p>Contact us</p></a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact us</h4>
+            <ul>
+              <li><a href="#"><p>you can contact us via phone number or social networks</p></a></li>
+              <li><a href="#"><p>0936405206</p></a></li>
+            </ul>
+          </div>
+
+
+          <div class="footer-col">
+            <h4>Follow us</h4>
+            <div class="socialLinks">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+   
+    <script>
+      const navLinkEls = document.querySelectorAll('.activable');
+      const windowPathName = window.location.pathname;
+      console.log(navLinkEls)
+      navLinkEls.forEach(navLinkEl => {
+        const navLinkPathName = new URL(navLinkEl.href).pathname;
+  
+        if((windowPathName === navLinkPathName) || (windowPathName === '/index.html' && navLinkPathName === '/')){
+          console.log("hii")
+          navLinkEl.classList.add('active');
+        }
+      });
+    </script>
+</body>
 </html>
