@@ -45,7 +45,7 @@ a :active{
     z-index: 999;
     position: fixed;
     width: 100%;
-    background-color: #68c0ce;
+    background-color: #4636ad;
     opacity: 80%;
     
     
@@ -64,7 +64,7 @@ a :active{
 }
 
 body{
-    background-color: #98DFEA;
+    background-color: #3e31b0;
     font-family: 'Poppins';
     font-weight: normal;
     margin: 0;
@@ -75,25 +75,27 @@ body{
 
 .unity{
     position: absolute;
-    translate: 850px 150px;
+    translate: 690px 320px;
     font-size: 50px;
-    color: #FBBB2C;
+    
 }
 
 .nintendo{
+    position: absolute;
     font-size: 50px;
-    translate: 800px 300px;
-    color: #E83D29;
+    translate: 1100px 150px;
+    
 }
 
 .nvidia{
+    position: absolute;
     font-size: 50px;
-    translate: 750px 500px;
-    color: green;
+    translate: 900px 150px;
+   
 }
 
 .gameCtrlDiv{
-    background-color: #98DFEA;
+    
     width: 100%;
     display: flex;
     justify-content: space-between; 
@@ -111,19 +113,29 @@ body{
     width:30%;
     margin-top: 250px;
     margin-right: 200px;
-    font-size: 22px;
+    font-size: 14px;
+    
+    position: relative;
+    left:70px ;
+}
+
+.lilOrange{
+    color: #ff9524;
 }
 
 .sideTxtHeader{
     margin: 10px;
+    margin-left: 0px;
     margin-bottom: 40px;
-    text-align: center;
+    
+   
+    font-size: 40px;
 }
 
 .btnSidetxt{
-    background-color: #FBBB2C;
+    background-color: #ff9524;
     color:#fff ;
-    margin-left: 230px;
+   
     margin-top: 20px;
 }
 
@@ -137,24 +149,27 @@ body{
 }
 
 .trendingGames{
-    background-color:#BD4743;
+   
     padding-bottom: 40px;
     clear: both;
     bottom: 300px;
     
 }
 
-.trendingGames h3 :hover{
-    font-size: larger;
+
+
+.large:hover{
+    font-size: 20px;
     transition: 0.3s;
 }
 
+
 .trendingGames img{
-    filter: drop-shadow(-10px -10px 10px black);
+    
 }
 
 .trendingGames article :hover{
-    filter: drop-shadow(-10px -10px 10px white);
+  
     transition: 0.3s;
     opacity: 70%;
 }
@@ -168,7 +183,7 @@ body{
 }
 
 .midwayImg{
-    width: 80%;
+    width: 85%;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -178,7 +193,7 @@ body{
 }
 
 .midway{
-    background-color:#BD4743;
+   
    
 }
 
@@ -190,25 +205,26 @@ body{
 }
 
 .ourProjects{
-    background-image: linear-gradient( #BD4743, black);
+    
     padding: 100px;
+    padding-top: 0px;
 }
 
 .row {
-    display: -ms-flexbox; /* IE10 */
+    display: -ms-flexbox; 
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
+    -ms-flex-wrap: wrap; 
     flex-wrap: wrap;
     padding: 0 4px;
     justify-content: center;
     margin-top: 60px;
   }
   
-  /* Create four equal columns that sits next to each other */
+  
   .column {
-    -ms-flex: 25%; /* IE10 */
+    -ms-flex: 25%; 
     flex: 25%;
-    max-width: 25%;
+    max-width: 40%;
     padding: 0 4px;
   }
   
@@ -248,8 +264,8 @@ body{
   }
 
   .trendingGames img {
-    aspect-ratio: 3/4;
-    width: 100%;
+    aspect-ratio: 1/1;
+    width: 90%;
     border-radius: 20px; 
   }
 
@@ -278,7 +294,7 @@ h2{
 
 .subscribe{
    
-    background-color: black;
+   
     padding-top: 80px;
 }
 
@@ -287,8 +303,9 @@ h2{
     margin: auto;
     width:80%;
     border-radius: 30px;
-    background-color: #FBBB2C;
+    background-color: black;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .newsletterSub h2 , p {
@@ -308,7 +325,7 @@ h2{
     position: relative;
     right: 60px;
     width: 50%;
-    background-color: #33d7f0;
+    background-color: #ff9524;
     color: #fff;
     border-radius: 30px;
     border: none;
@@ -393,11 +410,11 @@ a{
 }
 
 .layer1{
-    background-image: url('./layered-waves-haikei1.svg');
+   
 }
 
 .themeButton{
-    background-color: #FBBB2C;
+    background-color: #ff9524;
     font-family: Poppins;
     padding: 2px 20px;
     
@@ -418,13 +435,21 @@ a{
     position: relative;
 }
 
+.ourProjects button{
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 50px;
+    background-color: #5a4dce;
+    color: white;
+    margin-left: 500px;
+}
 
 
 .active::after{
     content: '';
     height: 4px;
     width: 90%;
-    background-color: #FBBB2C;
+    background-color: #ff9524;
     position: absolute;
     left: 20px;
     bottom: 0px;

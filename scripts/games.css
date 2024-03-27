@@ -14,7 +14,7 @@ h3,h1,h2,h4,h5,h6,p{
 }
 
 .themeButton{
-    background-color: #FBBB2C;
+    background-color: #ff9524;
     font-family: Poppins;
     padding: 2px 20px;
     
@@ -40,7 +40,7 @@ h3,h1,h2,h4,h5,h6,p{
     content: '';
     height: 4px;
     width: 90%;
-    background-color: #FBBB2C;
+    background-color: #ff9524;
     position: absolute;
     left: 20px;
     bottom: 0px;
@@ -80,7 +80,7 @@ a :active{
     z-index: 999;
     position: fixed;
     width: 100%;
-    background-color: #68c0ce;
+    background-color: #3e31b0;
     opacity: 80%;
     
     
@@ -99,7 +99,7 @@ a :active{
 }
 
 body{
-    background-color: #98DFEA;
+    background-color: #3e31b0;
     font-family: 'Poppins';
     font-weight: normal;
     margin: 0;
@@ -124,7 +124,7 @@ body{
 }
 
 .btnSidetxt{
-    background-color: #FBBB2C;
+    background-color: #ff9524;
     color:#fff ;
     margin-left: 230px;
     margin-top: 20px;
@@ -137,7 +137,7 @@ body{
 
 
 .gamePageFDiv{
-    background-color: #98DFEA;
+    background-color: #3e31b0;
     width: 100%;
     display: flex;
     justify-content: space-evenly; 
@@ -155,7 +155,7 @@ body{
     color: #fff;
     width:30%;
     margin-top: 200px;
-    
+    background-color: #3e31b0;
     font-size: 22px;
 }
 
@@ -175,6 +175,7 @@ body{
 .footerHome li , ul {
     color: #fff;
     list-style: none;
+   
 }
 
 .footerHome ul{
@@ -230,8 +231,9 @@ h2{
 
 .subscribe{
    
-    background-color: black;
+    background-color: #3e31b0;
     padding-top: 80px;
+    padding-bottom: 100px;
 }
 
 .newsletterSub{
@@ -239,7 +241,7 @@ h2{
     margin: auto;
     width:80%;
     border-radius: 30px;
-    background-color: #FBBB2C;
+    background-color: black;
     justify-content: center;
 }
 
@@ -260,7 +262,7 @@ h2{
     position: relative;
     right: 60px;
     width: 50%;
-    background-color: #33d7f0;
+    background-color: #ff9524;
     color: #fff;
     border-radius: 30px;
     border: none;
@@ -306,7 +308,7 @@ h2{
     padding-bottom: 40px;
     clear: both;
     bottom: 300px;
-    background-image: linear-gradient(#98DFEA, black);
+    background-color: #3e31b0;
     
 }
 
@@ -323,11 +325,12 @@ h2{
     margin-top: 40px;
     font-size: 20px;
     padding: 5px 10px;
-    background-color: #FBBB2C;
+    color: #fff;
+    background-color: #330e09;
 }
 
 .whyWWU div , .ourTeam div{
-    
+    background-color: #3e31b0;
 }
 .whyWWU div:hover , .ourTeam div:hover{
     filter: drop-shadow(-10px -10px 10px white);
@@ -363,7 +366,7 @@ h2{
   .whyWWU div , .ourTeam div{
     aspect-ratio: 1/1;
     width: 100%;
-    background-image: linear-gradient(#61bdcb,#52b0be 80% , #1a6b78  );
+    background-color: #120b03;
     border-radius: 20px; 
   }
 
@@ -407,12 +410,12 @@ h2{
   }
 
   .support img{
-    width: 50%;
-    border-radius: 20px;
+    width: 48%;
+   
   }
 
   .ourTeam{
     margin-top: 400px;
-    
-    background-image: linear-gradient(black ,#98DFEA, black);
+    background-color: #3e31b0;
+   
   }
