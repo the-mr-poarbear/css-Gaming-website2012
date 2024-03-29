@@ -17,28 +17,13 @@
     
 </head>
 
-<script>
-  window.onscroll = function() {changeColor()};
-  
-  function changeColor() {
-  console.log('hi')
-    var navColors=["#68c0ce","#a63632","#a63632","black"]
-    var navbar = document.getElementById("navbar");
-    var sections = document.getElementsByClassName("section");
-    for (var i = 0; i < sections.length; i++) {
-      var rect = sections[i].getBoundingClientRect();
-      if (rect.top <= 0 && rect.bottom >= 0) {
-        console.log(sections[i].style.backgroundColor)
-        navbar.style.backgroundColor = navColors[i];
-      }
-    }
-  }
-  </script>
+
 
   
 
 <body>
-    <nav class="navbar navbar-expand-lg " id="navbar">
+    <header>
+      <nav class="navbar navbar-expand-lg " id="navbar">
         <div class="navItemsCont">
           <div class="logo">
             <a class=" navItem" href="gi" style="padding-top: 0px; padding-bottom: 0px;"> <i class="bi bi-rocket-takeoff"></i></a>
@@ -47,18 +32,18 @@
           <div class="options">
             <ul class="navbar-nav hotizontal ">
               <li class="nav-item">
-                <a class=" text navItem activable" aria-current="page" href="/">Home</a>
+                <a class=" text navItem activable" aria-current="page" href="./">Home</a>
               </li>
               <li class="nav-item">
-                <a class=" text navItem activable" href="/games.html">Games</a>
+                <a class=" text navItem activable" href="./games.html">Games</a>
               </li>
               <li class="nav-item ">
-                <a class=" text navItem activable" href="/news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class=" text navItem activable" href="./news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   News
                 </a>
               </li>
               <li class="nav-item text activable ">
-                <a class="nav-link navItem" href="/about.html" aria-disabled="true">About us</a>
+                <a class="nav-link navItem" href="./about.html" aria-disabled="true">About us</a>
               </li>
 
               <li class="nav-item text ">
@@ -68,13 +53,16 @@
             </ul>
           </div>
         </div>
-    </nav>
+      </nav>
+    </header>
 
     <div class = "gameCtrlDiv section" id="section1">
-       <i class="bi bi-unity unity"></i>
-       <i class="bi bi-nintendo-switch nintendo"></i>
-       <i class="bi bi-nvidia nvidia"></i>
+       <img src="./assets/images/unity 1.png" class="unity">
+       <img src="./assets/images/unreal 1.png" class="nintendo">
+       <img src="./assets/images/cry 1.png" class="nvidia">
+       
        <div class="sideText">
+          <p class="lilOrange">tell me are you bored in the house?</p>
           <h1 class="sideTxtHeader">Are You Bored In The House?</h1>
 
           <p>
@@ -83,49 +71,49 @@
              bored in the mfing in the house bored and you're bored in the house in you're in the house bored ?
           </p>
 
-          <a href="/games.html">
+          <a href="./games.html">
             <button class="btn btnSidetxt"><h3>Click Here!</h3></button>
           </a>
           
        </div>
      
-       <img class="gameController" src="./assets/images/gameControllerHalf.png">
+       <img class="gameController" src="./assets/images/joy_stick.png">
     </div>
 
     
-    <div class="spacer layer1"></div>
+    
     <div class="trendingGames section" id="section2" >
         
         <h2 style="padding: 50px; font-size: 30px; padding-left: 110px; margin-top: 0px;">Currently Trending Games</h2>
         <ul>
           <li>
             <article>
-              <img src="assets/images/DeadspaceRemake.png">
-              <h3 style="text-align: center;"><i class="bi bi-fire"></i> 36 Followers</h3>
+              <img src="./assets/images/trend1.png">
+              <h3 style="text-align: center;" class="large"><i class="bi bi-fire"></i> 36 Followers</h3>
             </article>
             
           </li>
 
           <li>
             <article>
-              <img src="assets/images/eldenRing.png">
-              <h3 style="text-align: center;"><i class="bi bi-fire"></i> 30 Followers</h3>
+              <img src="./assets/images/trend2.png">
+              <h3 style="text-align: center;" class="large"><i class="bi bi-fire"></i> 30 Followers</h3>
             </article>
             
           </li>
 
           <li>
             <article>
-              <img src="assets/images/gta6.png">
-              <h3 style="text-align: center;"><i class="bi bi-fire"></i> 45 Followers</h3>
+              <img src="./assets/images/trend3.png">
+              <h3 style="text-align: center;" class="large"><i class="bi bi-fire"></i> 45 Followers</h3>
             </article>
             
           </li>
 
           <li>
             <article>
-              <img src="assets/images/palworld.png">
-              <h3 style="text-align: center;"><i class="bi bi-fire"></i> 56 Followers</h3>
+              <img src="./assets/images/trend4.png">
+              <h3 style="text-align: center;" class="large"><i class="bi bi-fire"></i> 56 Followers</h3>
             </article>
             
           </li>
@@ -133,8 +121,20 @@
     </div>
 
     <div class="midway section " id="section3">
-        <h2 class="midwayTxt" style="margin: auto 180px ;">Play Our Games To Be Not a Better Gamer But a Better Person</h2>
-        <img class="midwayImg" src="./assets/images/Sekiro.png">
+        <h2 class="midwayTxt" style="margin: auto 270px ;">Play Our Games To Be Not a Better Gamer But a Better Person</h2>
+
+        <div class="sideText" style="margin-left: 30px; margin-top: 60px;">
+          
+          <h1>You Will Enjoy Our Games</h1>
+
+          <p>
+             so go ahed and sign up and enjoy thousands of amusing games
+            
+          </p>
+          
+       </div>
+
+        <img class="midwayImg" src="./assets/images/midwayspiderman.png">
     </div>
     <div class="ourProjects">
         <h2 style="text-align: center;">Our Recent Projects</h2>
@@ -143,19 +143,22 @@
         <div class="row">
 
             <div class="column" >
-                <img class="imgRad" src="assets/images/ghostyel.png" style="width:101%;">
-                
+                <img class="imgRad" src="./assets/images/colg1.png" style="width: 100%;">
+                <img class="imgRad" src="./assets/images/colg5.png" style="width: 65%;">
                 
             </div>
             <div class="column">
-                <img class="imgRad" src="./assets/images/spiderman.png" style="width:100%">
-                <img class="imgRad" src="assets/images/LouYellow (2).png" style="width:100%">
+                <img class="imgRad" src="./assets/images/colg2.png" style="width: 100%;">
+                <img class="imgRad" src="./assets/images/colg4.png" style="position: relative ; right : 120px ; width: 105%;">
             </div>
             <div class="column">
-                <img class="imgRad" src="assets/images/bloodeborneyel.png" style="width:115%">
+                <img class="imgRad" src="./assets/images/colg3.png" style="width: 95%;">
+                <img class="imgRad" src="./assets/images/colg6.png" style="position: relative ; right : 95px ; width: 120%;">
                  
             </div>
         </div>
+
+        <button>SEE ALL</button>
     </div>
 
     <div class="subscribe section" id="section4">
@@ -235,7 +238,7 @@
       navLinkEls.forEach(navLinkEl => {
         const navLinkPathName = new URL(navLinkEl.href).pathname;
   
-        if((windowPathName === navLinkPathName) || (windowPathName === '/index.html' && navLinkPathName === '/')){
+        if((windowPathName === navLinkPathName) || (windowPathName === './index.html' && navLinkPathName === './')){
           console.log("hii")
           navLinkEl.classList.add('active');
         }

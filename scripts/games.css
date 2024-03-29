@@ -1,5 +1,49 @@
 
+@font-face {
+    font-family: 'ExBold';
+    font-weight: 800;
+    src: url('../assets/fonts/Poppins-ExtraBold.ttf') ;
+       
+}
 
+@font-face {
+    font-family: 'Bold';
+    font-weight: 700;
+    src: url('../assets/fonts/Poppins-Bold.ttf') ;
+       
+}
+
+@font-face {
+    font-family: 'SemiBold';
+    font-weight: 600;
+    src: url('../assets/fonts/Poppins-SemiBold.ttf') ;
+       
+}
+
+@font-face {
+    font-family: 'Thin';
+    font-weight: 300;
+    src: url('../assets/fonts/Poppins-Thin.ttf') ;
+       
+}
+
+@font-face {
+    font-family: 'Medium';
+    font-weight: 500;
+    src: url('../assets/fonts/Poppins-Medium.ttf') ;
+       
+}
+
+@font-face {
+    font-family: 'Regular';
+    font-weight: 400;
+    src: url('../assets/fonts/Poppins-Regular.ttf') ;
+       
+}
+
+:root{
+    --black: #070707;
+}
 
 h3,h1,h2,h4,h5,h6,p{
     color: #fff;
@@ -14,7 +58,7 @@ h3,h1,h2,h4,h5,h6,p{
 }
 
 .themeButton{
-    background-color: #FBBB2C;
+    background-color: #ff9524;
     font-family: Poppins;
     padding: 2px 20px;
     
@@ -40,7 +84,7 @@ h3,h1,h2,h4,h5,h6,p{
     content: '';
     height: 4px;
     width: 90%;
-    background-color: #FBBB2C;
+    background-color: #ff9524;
     position: absolute;
     left: 20px;
     bottom: 0px;
@@ -58,8 +102,14 @@ h3,h1,h2,h4,h5,h6,p{
 
 .navItem{
     color: #fff;
+    font-size: 17px;
+    font-family: Regular;
+    margin: 0px 30px;
+    margin-top: 10px;
+
    
 }
+
 a :active{
     text-decoration: underline;
 }
@@ -80,8 +130,8 @@ a :active{
     z-index: 999;
     position: fixed;
     width: 100%;
-    background-color: #68c0ce;
-    opacity: 80%;
+    background-color: #3e31b0;
+    
     
     
 }
@@ -99,7 +149,7 @@ a :active{
 }
 
 body{
-    background-color: #98DFEA;
+    background-color: #3e31b0;
     font-family: 'Poppins';
     font-weight: normal;
     margin: 0;
@@ -107,26 +157,20 @@ body{
     max-width: 1440px;
 
 }
-
-.sideText{
-    padding: 15px;
-    color: #fff;
-    width:30%;
-    margin-top: 250px;
-    margin-right: 200px;
-    font-size: 22px;
-}
+    
 
 .sideTxtHeader{
     margin: 10px;
     margin-bottom: 40px;
-    text-align: center;
+    font-size: 30px;
+    font-family: Bold;
+    line-height:55px;
 }
 
 .btnSidetxt{
-    background-color: #FBBB2C;
+    background-color: #ff9524;
     color:#fff ;
-    margin-left: 230px;
+
     margin-top: 20px;
     
 }
@@ -137,7 +181,7 @@ body{
 
 
 .gamePageFDiv{
-    background-color: #98DFEA;
+    background-color: #3e31b0;
     width: 100%;
     display: flex;
     justify-content: space-evenly; 
@@ -155,15 +199,43 @@ body{
     color: #fff;
     width:30%;
     margin-top: 200px;
-    
+    background-color: #3e31b0;
     font-size: 22px;
+    font-size: 15px;
+    font-family: Regular;
+    line-height: 30px;
+}
+
+
+.themeButton{
+    background-color: #ff9524;
+    font-family: Regular;
+    padding: 2px 20px;
+    
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.themeButton:hover{
+    background-color: #E83D29;
+    font-family: Regular;
 }
 
 
 .footerHome{
-    background-color: black;
-    padding-top: 150px;
+    background-color: var(--black) ;
+    padding-top: 80px;
     
+}
+
+.footerHome h4{
+    font-family: SemiBold;
+    font-size: 17px;
+}
+
+.footerHome p {
+    font-family: Regular;
+    font-size: 16px;
 }
 
 .footerHome .row{
@@ -188,22 +260,8 @@ body{
 
 .footerHome .container{
     max-width: 1170px;
-    background-color: black;
+    background-color: var(--black);
     margin: auto;
-    
-}
-
-@font-face {
-    font-family: 'PoppinsThin';
-    src: url('../assets/fonts/Poppins-Thin.ttf') ;
-       
-}
-
-.footerHome p {
-   
-    font-size: 12px;
-    font-weight: lighter;
-    padding-top: 10px;
     
 }
 
@@ -229,9 +287,29 @@ h2{
 }
 
 .subscribe{
-   
-    background-color: black;
+    padding-bottom: 100px;
+    background-color: #3e31b0;
     padding-top: 80px;
+}
+
+.subscribe h2 {
+    font-size: 30px;
+    font-family: SemiBold;
+}
+
+.subscribe p {
+    font-size: 16px;
+    font-family: Regular;
+    width: 40%;
+}
+
+.newsletterSub h2{
+    font-family: Regular;
+}
+
+.newsletterSub p{
+    font-size: 17px;
+    width: 100%;
 }
 
 .newsletterSub{
@@ -239,8 +317,9 @@ h2{
     margin: auto;
     width:80%;
     border-radius: 30px;
-    background-color: #FBBB2C;
+    background-color: var(--black);
     justify-content: center;
+   
 }
 
 .newsletterSub h2 , p {
@@ -260,10 +339,11 @@ h2{
     position: relative;
     right: 60px;
     width: 50%;
-    background-color: #33d7f0;
+    background-color: #ff9524;
     color: #fff;
     border-radius: 30px;
     border: none;
+   
 }
 
 
@@ -306,16 +386,40 @@ h2{
     padding-bottom: 40px;
     clear: both;
     bottom: 300px;
-    background-image: linear-gradient(#98DFEA, black);
+    background-color: #3e31b0;
     
 }
 
 .whyWWU h3 ,.ourTeam h3{
+    padding: 0 20px ;
     padding-top: 30px;
+    font-family: SemiBold;
+    font-size: 20px;
+}
+
+.whyWWU h2 {
+    
+    padding: 50px; 
+    font-size: 25px;
+    padding-left: 110px;
+    margin-top: 0px;
+    font-family: SemiBold;
+}
+
+.ourTeam h2 {
+    padding: 50px; 
+    font-size: 30px; 
+    padding-left: 110px; 
+    margin-top: 0px;
+    font-family: SemiBold;
+    font-size: 25px;
 }
 
 .whyWWU p , .ourTeam p{
     padding: 0 20px ;
+    font-size: 14px;
+    font-family: Medium;
+    line-height: 25px;
 }
 
 .whyWWU button , .ourTeam button{
@@ -323,11 +427,13 @@ h2{
     margin-top: 40px;
     font-size: 20px;
     padding: 5px 10px;
-    background-color: #FBBB2C;
+    color: #fff;
+    background: #B000DC1C;
+
 }
 
 .whyWWU div , .ourTeam div{
-    
+    background-color: #3e31b0;
 }
 .whyWWU div:hover , .ourTeam div:hover{
     filter: drop-shadow(-10px -10px 10px white);
@@ -363,7 +469,7 @@ h2{
   .whyWWU div , .ourTeam div{
     aspect-ratio: 1/1;
     width: 100%;
-    background-image: linear-gradient(#61bdcb,#52b0be 80% , #1a6b78  );
+    background-color: #1C140F;
     border-radius: 20px; 
   }
 
@@ -376,11 +482,14 @@ h2{
 
   .ourTeam p{
     text-align: center;
-    font-family: PoppinsThin;
+    font-family: Thin;
     padding-bottom: 40px;
+    font-size: 16px;
   }
   .ourTeam h3{
     margin-bottom: 5px;
+    font-size: 19px;
+    font-family: Semibold;
   }
 
   .whyWWU ul , .ourTeam ul{
@@ -394,10 +503,21 @@ h2{
     translate: 0 00px;
     z-index: -1;
     width: 100%;
-    background-color: black;
+    background-color:#1C140F;
     top:0px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .support h2 {
+    font-family: SemiBold;
+    font-size: 28px;
+  }
+
+  .support p {
+    font-family:Regular;
+    line-height: 30px;
+    font-size: 16px;
   }
 
   .support div{
@@ -407,12 +527,13 @@ h2{
   }
 
   .support img{
-    width: 50%;
-    border-radius: 20px;
+    width: 48%;
+   
   }
 
   .ourTeam{
     margin-top: 400px;
-    
-    background-image: linear-gradient(black ,#98DFEA, black);
+    background-color: #3e31b0;
   }
+   
+  
